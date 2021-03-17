@@ -9,8 +9,8 @@ body {
   padding: 20px;
   margin: 20px auto;
   width: 95%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
 }
 
 .date {
@@ -21,7 +21,7 @@ body {
 }
 
 .post h2 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #374c60;
   padding-bottom: 1rem;
 }
@@ -29,10 +29,12 @@ body {
 .post .quote {
   border-left: 4px solid #59a3d4;
   padding-left: 8px;
+  margin-bottom: 1rem;
 }
 
-.post-info {
+.post .info {
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .post {
