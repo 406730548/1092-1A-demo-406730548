@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 600;
+    height: 10vh;
+    border:5px solid rgb(34, 38, 110);
+}
+
+#box1 {
+    flex-grow: 1;
+    flex-basis: 20%;
+    background-color: rgb(166, 225, 250);
+    text-align: center;
+    border-right:5px solid  rgb(34, 38, 110);
+}
+
+#box2 {
+    flex-grow: 2;
+    flex-basis: 70%;
+    background-color: rgb(166, 225, 250);
+    text-align: center;
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 600;
+    height: 80vh;
+    border:5px solid rgb(24, 121, 36);
+}
+
+#box3 {
+    flex-grow: 1;
+    flex-basis: 20%;
+    background-color: rgb(255, 252, 164);
+    text-align: center;
+    border-right:5px solid  rgb(24, 121, 36);
+}
+
+#nav {
+    margin: 0 auto;
+    width: 80%;
+    height: 70vh;
+    background-color: rgb(40, 130, 132);
+}
+
+#box4 {
+    flex-grow: 2;
+    flex-basis: 70%;
+    background-color: rgb(255, 252, 164);
+    text-align: center;
+}
+
+#section {
+    text-align: left;
+    margin: 0 auto;
+    width: 80%;
+    height: 70vh;
+    background-color: rgb(40, 130, 132);
+}
+
+#display {
+    margin: 0 auto;
+    width: 75%;
+    height: 50vh;
+    background-color: rgb(55, 164, 50);
+}
+
+#play {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+}
+
+#play iframe, #video object, #video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+}
+
+#videobar {
+    position: relative;
+    margin: 2rem auto;
+    width: 75%;
+    height: 10vh;
+    background-color: rgb(16, 69, 96);
+}
+
+#videobar img {
+    max-width: 18%;
+    max-height: 10vh;
+}
+
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 600;
+    height: 10vh;
+}
+
+#box5 {
+    flex-basis: 100%;
+    border:5px solid rgb(81, 211, 191);
+    background-color: rgb(81, 211, 191);
+    
+}
