@@ -5,39 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Div Demo</title>
     <link rel="stylesheet" href="./div.css">
+    <script src="./div.js"></script>
 </head>
 <body>
     <div id="container">
         <div id="heading">
             <h1>Heading</h1>
-            <ul>
-                <li>
-                    <a href="#">Link 1</a>
-                </li>
-                <li>
-                    <a href="#">Link 2</a>
-                </li>
-                <li>
-                    <a href="#">Link 3</a>
-                </li>
-            </ul>
+            <div id="heading2">
+                <ul>
+                    <li onclick="changeColor(1)">
+                        <a href="#">Link 1</a>
+                    </li>
+                    <li onclick="changeColor(2)">
+                        <a href="#">Link 2</a>
+                    </li>
+                    <li onclick="changeColor(3)">
+                        <a href="#">Link 3</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li onclick="changePicture(1)">
+                        <a href="#">Link 1</a>
+                    </li>
+                    <li onclick="changePicture(2)">
+                        <a href="#">Link 2</a>
+                    </li>
+                    <li onclick="changePicture(3)">
+                        <a href="#">Link 3</a>
+                    </li>
+                    <li onclick="changePicture(4)">
+                        <a href="#">Link 4</a>
+                    </li>
+                    <li onclick="changePicture(5)">
+                        <a href="#">Link 5</a>
+                    </li>
+                </ul>
+            </div> 
         </div>
         <div id="main">        
             <aside>
                 <ul>
-                    <li>
+                    <li onclick='changeVideo(1)'>
                         <a href="#">淡江大戲1</a>
                     </li>
-                    <li>
+                    <li onclick='changeVideo(2)'>
                         <a href="#">淡江大戲2</a>
                     </li>
-                    <li>
+                    <li onclick='changeVideo(3)'>
                         <a href="#">淡江大戲3</a>
                     </li>
-                    <li>
+                    <li onclick='changeVideo(4)'>
                         <a href="#">淡江大戲4</a>
                     </li>
-                    <li>
+                    <li onclick='changeVideo(5)'>
                         <a href="#">淡江大戲5</a>
                     </li>
                 </ul>
@@ -51,7 +71,6 @@
             </div>  
         </div> 
         <div id="footer">
-        
         </div>
     </div>
 
