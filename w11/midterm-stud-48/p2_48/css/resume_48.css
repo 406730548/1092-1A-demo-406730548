@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+table, tr, td {
+    border: 1px solid black;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+table {
+    font-size: 20px;
+    width: 90%;
+    height: 600px;
+    margin: 20px auto;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+.left {
+    background-color: rgb(210, 245, 241);
+}
+
+
+.deta {
+    background-color: rgb(241, 205, 216);
+}
