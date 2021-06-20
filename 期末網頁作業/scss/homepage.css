@@ -229,9 +229,35 @@ body {
   top: 0;
 }
 
-.footer {
+#footer {
   margin-top: 8rem;
   background-color: #a09898;
   height: 30vh;
+  color: #413a3a;
+  text-align: center;
 }
-/*# sourceMappingURL=style.css.map */
+
+#footer .footer-name {
+  padding-top: 3rem;
+  width: 80%;
+  margin: auto;
+}
+
+#footer .footer-content {
+  padding-top: 2rem;
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .header .opa p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header .opa p {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=homepage.css.map */

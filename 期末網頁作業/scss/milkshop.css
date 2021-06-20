@@ -1,3 +1,4 @@
+/*   color variables */
 *,
 *::after,
 *::before {
@@ -11,11 +12,79 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.nav-top {
+  background-color: #ffffff;
+  padding: 1rem 0;
+}
+
+.nav-top .nav-bar {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.nav-top .nav-bar .logo {
+  font-weight: bold;
+  font-size: 16px;
+  color: #5e5959;
+}
+
+.nav-top .nav-bar .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-top .nav-bar .menu li {
+  position: relative;
+  font-weight: bold;
+  font-size: 15px;
+  padding-right: 2rem;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+.nav-top .nav-bar .menu li::after {
+  content: "";
+  height: 0.2rem;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  bottom: 0.3rem;
+  border-radius: 1rem;
+  z-index: 10;
+  background-color: #413a3a;
+  -webkit-transition: width 200ms ease-in;
+  transition: width 200ms ease-in;
+}
+
+.nav-top .nav-bar .menu li:hover::after, .nav-top .nav-bar .menu li:focus::after {
+  width: 80%;
+}
+
+.nav-top .nav-bar .menu li:hover ul,
+.nav-top .nav-bar .menu li:focus ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-top .nav-bar .menu li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #5e5959;
+}
+
 .nav {
   background-color: white;
-  position: fixed;
+  position: absolute;
   z-index: 5;
-  top: 0;
+  top: 75px;
   width: 100%;
   -webkit-box-shadow: 0 0 10px #2c8b00;
           box-shadow: 0 0 10px #2c8b00;
@@ -260,4 +329,4 @@ section.articles article p {
     height: 620vh;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=milkshop.css.map */

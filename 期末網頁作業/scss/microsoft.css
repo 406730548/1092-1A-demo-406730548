@@ -1,3 +1,4 @@
+/*   color variables */
 * {
   padding: 0;
   margin: 0;
@@ -16,7 +17,6 @@ body {
 .nav {
   background-color: #ffffff;
   padding: 1rem 0;
-  margin-bottom: 3rem;
 }
 
 .nav .nav-bar {
@@ -31,6 +31,12 @@ body {
   list-style: none;
 }
 
+.nav .nav-bar .logo {
+  font-weight: bold;
+  font-size: 16px;
+  color: #5e5959;
+}
+
 .nav .nav-bar .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,7 +47,7 @@ body {
   position: relative;
   font-weight: bold;
   font-size: 15px;
-  padding-right: 1.5rem;
+  padding-right: 2rem;
   -webkit-transition: background-color 200ms ease-in-out;
   transition: background-color 200ms ease-in-out;
 }
@@ -55,7 +61,7 @@ body {
   bottom: 0.3rem;
   border-radius: 1rem;
   z-index: 10;
-  background-color: #253155;
+  background-color: #413a3a;
   -webkit-transition: width 200ms ease-in;
   transition: width 200ms ease-in;
 }
@@ -71,8 +77,9 @@ body {
 }
 
 .nav .nav-bar .menu li a {
+  font-size: 16px;
   text-decoration: none;
-  color: #525b77;
+  color: #5e5959;
 }
 
 .memuBtn {
@@ -172,7 +179,7 @@ ul {
   z-index: 3;
   position: absolute;
   height: 480px;
-  background: url("./picture/surface laptop.png") no-repeat center center/cover;
+  background: url("./surface laptop.png") no-repeat center center/cover;
   padding: 6rem 0 0 3rem;
   margin-bottom: 2rem;
   font-size: 0.8rem;
@@ -270,7 +277,7 @@ ul {
 
 /* edge */
 .edge {
-  background: url("./picture/microsoft edge.jpeg") no-repeat center center/cover;
+  background: url("./microsoft edge.jpeg") no-repeat center center/cover;
   margin-bottom: 2rem;
   height: 480px;
 }

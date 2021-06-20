@@ -1,10 +1,16 @@
+/*   color variables */
+$clr-primary: #0e48fe;
+$clr-primary-hover: #29e6a7;
+$clr-primary-dark: #039d69;
 $clr-gray100: #ffffff;
 $clr-gray150: #f4f6fb;
 $clr-gray200: #eef1f6;
 $clr-gray300: #e1e5ee;
-$clr-gray400: #525b77;
-$clr-gray500:#253155;
+$clr-gray400: #a09898;
+$clr-gray500:#5e5959;
+$clr-gray600:#413a3a;
 $wordColor:rgb(36, 31, 31);
+
 * {
     padding: 0;
     margin: 0;
@@ -21,20 +27,24 @@ body {
 .nav  {
   background-color: $clr-gray100;
   padding:1rem 0;
-  margin-bottom: 3rem;
   .nav-bar {
     width: 90%;
     margin: auto;
       display: flex;
       justify-content: space-between;
       list-style: none;
+      .logo {
+        font-weight: bold;
+        font-size: 16px;
+        color: $clr-gray500;
+      }
       .menu {
           display: flex;
           li {
               position: relative;
               font-weight: bold;
               font-size: 15px;
-              padding-right: 1.5rem;
+              padding-right: 2rem;
               transition: background-color 200ms ease-in-out;
               &::after {
                 content: "";
@@ -45,7 +55,7 @@ body {
                 bottom: 0.3rem;
                 border-radius: 1rem;
                 z-index: 10;
-                background-color: $clr-gray500;
+                background-color: $clr-gray600;
                 transition: width 200ms ease-in;
 
               }
@@ -62,13 +72,15 @@ body {
 
               
               a {
+                font-size: 16px;
                   text-decoration: none;
-                  color: $clr-gray400;
+                  color: $clr-gray500;
               }
           }
       }
   }
 }
+
 .memuBtn {
   cursor: pointer;
 }
@@ -148,7 +160,7 @@ a {
     z-index: 3;
     position: absolute;
     height: 480px;
-    background: url('./picture/surface\ laptop.png') no-repeat center center/cover;
+    background: url('./surface\ laptop.png') no-repeat center center/cover;
     padding: 6rem 0 0 3rem;
     margin-bottom: 2rem;
     font-size: 0.8rem;
@@ -227,7 +239,7 @@ a {
   
   /* edge */
   .edge {
-    background: url('./picture/microsoft\ edge.jpeg' ) no-repeat center center/cover;
+    background: url('./microsoft\ edge.jpeg' ) no-repeat center center/cover;
     margin-bottom: 2rem;
     height: 480px;
     .content {

@@ -1,3 +1,15 @@
+/*   color variables */
+$clr-primary: #0e48fe;
+$clr-primary-hover: #29e6a7;
+$clr-primary-dark: #039d69;
+$clr-gray100: #ffffff;
+$clr-gray150: #f4f6fb;
+$clr-gray200: #eef1f6;
+$clr-gray300: #e1e5ee;
+$clr-gray400: #a09898;
+$clr-gray500:#5e5959;
+$clr-gray600:#413a3a;
+$wordColor:rgb(36, 31, 31);
 *,
 *::after,
 *::before{
@@ -12,11 +24,68 @@ body {
 @mixin customerShadow($size) {
   box-shadow: $size $size 0 0 rgb(105, 105, 105);
 }
+
+.nav-top  {
+  background-color: $clr-gray100;
+  padding:1rem 0;
+  .nav-bar {
+    width: 90%;
+    margin: auto;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      .logo {
+        font-weight: bold;
+        font-size: 16px;
+        color: $clr-gray500;
+      }
+      .menu {
+          display: flex;
+          li {
+              position: relative;
+              font-weight: bold;
+              font-size: 15px;
+              padding-right: 2rem;
+              transition: background-color 200ms ease-in-out;
+              &::after {
+                content: "";
+                height: 0.2rem;
+                position: absolute;
+                left: 0;
+                top: 20px;
+                bottom: 0.3rem;
+                border-radius: 1rem;
+                z-index: 10;
+                background-color: $clr-gray600;
+                transition: width 200ms ease-in;
+
+              }
+              &:hover::after,
+              &:focus::after {
+                width: 80%;
+              }
+
+              &:hover ul,
+              &:focus ul {
+                  opacity: 1;
+                  visibility: visible;
+              }
+
+              
+              a {
+                font-size: 16px;
+                  text-decoration: none;
+                  color: $clr-gray500;
+              }
+          }
+      }
+  }
+}
 .nav {
     background-color: white;
-    position: fixed;
+    position: absolute;
     z-index: 5;
-    top: 0;
+    top: 75px;
     width: 100%;
     box-shadow: 0 0 10px rgb(44, 139, 0);
 
